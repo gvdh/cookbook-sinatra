@@ -1,0 +1,17 @@
+<% @results.each_with_index do |i, index| %>
+  <ul>
+  <li>
+  <%= "#{index + 1}. - #{i}" %>
+  </ul>
+</li>
+  <%end%>
+
+
+<h1>What recipe do you want ?</h1>
+
+    <div class="button">
+      <form action="/importing2" method="POST">
+      <input type="number" placeholder="What recipe do you want ?" name="number"/>
+      <input type="submit">
+    </div>
+

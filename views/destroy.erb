@@ -1,0 +1,19 @@
+<% @recipes.each_with_index do |i, index| %>
+  <ul>
+  <li>
+  <%= "#{index + 1}. - #{i.done} #{i.name} (#{i.cooking_time}) - Difficulty : #{i.difficulty}" %>
+  </ul>
+</li>
+  <%end%>
+
+
+<h1>What recipe do you want to destroy ?</h1>
+
+    <div class="button">
+      <form action="/destroyed" method="POST">
+      <input type="text" placeholder="What recipe do you want to destroy" name="number"/>
+      <input type="submit">
+    </div>
+
+
+

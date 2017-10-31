@@ -1,0 +1,9 @@
+<h1>Your recipe has been destroyed</h1>
+
+<% @recipes.each_with_index do |i, index| %>
+  <ul>
+  <li>
+  <%= "#{index + 1}. - #{i.done} #{i.name} (#{i.cooking_time}) - Difficulty : #{i.difficulty}" %>
+  </ul>
+</li>
+  <%end%>
